@@ -1,0 +1,197 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;  /* Prevent scrolling on smaller devices */
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+/* Profile Container */
+.profile-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 100%;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin: 15px 0;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff416c;
+}
+
+/* Sound Control Button */
+.sound-control {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.sound-control:hover {
+    transform: scale(1.2);
+}
+
+/* Style for Sound Control Icon */
+.sound-control {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;  /* Balanced padding */
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;  /* Scaled appropriately for responsive fit */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sound-control:hover {
+    transform: scale(1.2);
+}
+
+/* Loading Screen Styling */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;  /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;  /* Ensure it appears on top */
+}
+
+/* Center the GIF */
+.loading-gif {
+    width: 100px;  /* Adjust size based on your GIF */
+    height: auto;
+}
+
+
+
+/* --------------------
+   Responsive Media Queries
+-------------------- */
+@media (max-width: 768px) {
+    #landing-page h1 {
+        font-size: 2.5rem;
+    }
+
+    #enter-btn {
+        font-size: 1.3rem;
+        padding: 12px 25px;
+    }
+
+    .profile-card {
+        padding: 30px;
+        max-width: 300px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .social-icons a {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+}
