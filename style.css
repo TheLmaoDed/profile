@@ -1,4 +1,3 @@
-/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +7,9 @@
 body, html {
     height: 100%;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;  /* Prevent scrolling on smaller devices */
+    overflow: hidden;
 }
 
-/* Background Video */
 .background-video {
     position: fixed;
     top: 0;
@@ -23,7 +21,6 @@ body, html {
     filter: brightness(40%);
 }
 
-/* Profile Container */
 .profile-container {
     height: 100vh;
     display: flex;
@@ -78,7 +75,6 @@ p {
     color: #ff416c;
 }
 
-/* Sound Control Button */
 .sound-control {
     position: fixed;
     top: 20px;
@@ -97,13 +93,13 @@ p {
     transform: scale(1.2);
 }
 
-/* Style for Sound Control Icon */
+
 .sound-control {
     background: rgba(0, 0, 0, 0.6);
-    padding: 8px;  /* Balanced padding */
+    padding: 8px;
     border-radius: 50%;
     color: white;
-    font-size: 1.3rem;  /* Scaled appropriately for responsive fit */
+    font-size: 1.3rem;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -112,31 +108,24 @@ p {
     transform: scale(1.2);
 }
 
-/* Loading Screen Styling */
 #loading-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #202020;  /* Dark background */
+    background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;  /* Ensure it appears on top */
+    z-index: 100;
 }
 
-/* Center the GIF */
 .loading-gif {
-    width: 100px;  /* Adjust size based on your GIF */
+    width: 100px;
     height: auto;
 }
 
-
-
-/* --------------------
-   Responsive Media Queries
--------------------- */
 @media (max-width: 768px) {
     #landing-page h1 {
         font-size: 2.5rem;
